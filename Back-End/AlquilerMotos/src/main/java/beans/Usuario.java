@@ -3,7 +3,7 @@ package beans;
 
 
 public class Usuario {
-   private int cedula;
+    private String username;
     private String contrasena;
     private String nombres;
     private String apellidos;
@@ -12,8 +12,8 @@ public class Usuario {
     private boolean calificacion;
     private boolean tipo_calificacion;  
 
-    public Usuario(int cedula, String contrasena, String nombres, String apellidos, String email, double saldo, boolean calificacion, boolean tipo_calificacion) {
-        this.cedula = cedula;
+    public Usuario(String username, String contrasena, String nombres, String apellidos, String email, double saldo, boolean calificacion, boolean tipo_calificacion) {
+        this.username = username;
         this.contrasena = contrasena;
         this.nombres = nombres;
         this.apellidos = apellidos;
@@ -23,12 +23,12 @@ public class Usuario {
         this.tipo_calificacion = tipo_calificacion;
     }
 
-    public int getCedula() {
-        return cedula;
+    public String getUsername() {
+        return username;
     }
 
-    public void setCedula(int cedula) {
-        this.cedula = cedula;
+    public void setUsername(String username) {
+        this.username = username;
     }
 
     public String getContrasena() {
@@ -89,7 +89,7 @@ public class Usuario {
 
     @Override
     public String toString() {
-        return "Usuario{" + "cedula=" + cedula + ", contrasena=" + contrasena + ", nombres=" + nombres + ", apellidos=" + apellidos + ", email=" + email + ", saldo=" + saldo + ", calificacion=" + calificacion + ", tipo_calificacion=" + tipo_calificacion + '}';
+        return "Usuario{" + "username=" + username + ", contrasena=" + contrasena + ", nombres=" + nombres + ", apellidos=" + apellidos + ", email=" + email + ", saldo=" + saldo + ", calificacion=" + calificacion + ", tipo_calificacion=" + tipo_calificacion + '}';
     }
     
 }

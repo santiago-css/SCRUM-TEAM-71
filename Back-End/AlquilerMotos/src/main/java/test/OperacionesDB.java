@@ -7,7 +7,7 @@ import java.sql.Statement;
 public class OperacionesDB {
 
     public static void main(String[] args) {
-        actuaizarMotos(1,"500");
+        actuaizarMotos(1,"150");
         listarMotos();
     }
 

@@ -1,0 +1,12 @@
+.bg-login-image{
+    background: url("../img/MotoLogin.jpg");
+    background-position: center;
+    background-size: cover;
+    border:0px;
+}
+
+
+    .sizeDiv{
+width:40vw;
+    }
+
